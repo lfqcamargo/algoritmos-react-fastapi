@@ -26,17 +26,17 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento.
 
 ### Configuração do Frontend e Backend
 
-Navegar para a pasta do frontend e instalar as dependências
-cd frontend
-npm install
-Iniciar o servidor de desenvolvimento do frontend
-npm start
+- Navegar para a pasta do frontend e instalar as dependências
+- cd frontend
+- npm install
+- Iniciar o servidor de desenvolvimento do frontend
+- npm start
 
-Navegar para a pasta do backend e instalar as dependências
-cd ../backend
-pip install -r requirements.txt
-Iniciar o servidor de desenvolvimento do backend
-uvicorn app.main:app --reload
+- Navegar para a pasta do backend e instalar as dependências
+- cd ../backend
+- pip install -r requirements.txt
+- Iniciar o servidor de desenvolvimento do backend
+- uvicorn app.main:app --reload
 
 ### Autor
 Lucas Fernando Quinato de Camargo
