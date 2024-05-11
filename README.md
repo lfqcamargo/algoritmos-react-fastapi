@@ -24,20 +24,23 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento.
 - Python 3
 - pip
 
-### Configuração do Frontend
+### Configuração do Frontend e Backend
 
-
-```bash
+bash
+# Navegar para a pasta do frontend e instalar as dependências
 cd frontend
-npm install       
-npm start         
+npm install
+# Iniciar o servidor de desenvolvimento do frontend
+npm start
 
-cd backend
-pip install -r requirements.txt  
-uvicorn app.main:app --reload    
+# Navegar para a pasta do backend e instalar as dependências
+cd ../backend
+pip install -r requirements.txt
+# Iniciar o servidor de desenvolvimento do backend
+uvicorn app.main:app --reload
 
 
-### Autor
+#### Autor
 Lucas Fernando Quinato de Camargo
 lfqcamargo@gmail.com
 
