@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContentStyled = styled.main`
-    background-color: beige;
+    background-color: #fafafa;
     border-radius: 14px;
     margin: auto;
     width: 80%;

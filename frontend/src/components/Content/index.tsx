@@ -6,16 +6,17 @@ import { ContentStyled } from "./stylesContent";
 interface ContentProps {
     description: string;
     params: React.ReactNode
+    result: object | null
 }
 
-export function Content ({ description, params }: ContentProps) {
+export function Content ({ description, params, result }: ContentProps) {
     return(
         <ContentStyled>
             <Description description={description} />
 
             <Params params={params} />
 
-            <Result />
+            <Result result={result} />
         </ContentStyled>
     )
 }
