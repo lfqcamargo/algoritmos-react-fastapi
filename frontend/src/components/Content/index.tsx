@@ -6,7 +6,7 @@ import { ContentStyled } from "./stylesContent";
 interface ContentProps {
     description: string;
     params: React.ReactNode
-    result: object | null
+    result: { factorial: string[] } | null;
 }
 
 export function Content ({ description, params, result }: ContentProps) {

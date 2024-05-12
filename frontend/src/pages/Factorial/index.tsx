@@ -13,7 +13,7 @@ export function Factorial() {
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         try {
-            const fetchedData = await fetchFactorial();  
+            const fetchedData = await fetchFactorial({number: parseInt(inputValue)});  
             setData(fetchedData);
         } catch (error) {
             console.error('Error:', error);

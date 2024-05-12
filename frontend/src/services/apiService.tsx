@@ -1,10 +1,13 @@
-// apiService.js
+interface Factorial {
+    number: number
+}
 
-const BASE_URL = 'https://jsonplaceholder.typicode.com';
+const BASE_URL = 'http://127.0.0.1:8000';
 
-export const fetchFactorial = async () => {
+export const fetchFactorial = async ({ number }: Factorial) => {
+    console.log(number)
     try {
-        const response = await fetch(`${BASE_URL}/posts`);
+        const response = await fetch(`${BASE_URL}/factorial/${number}`);
         const data = await response.json();
         return data;
     } catch (error) {

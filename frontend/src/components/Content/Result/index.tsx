@@ -1,12 +1,20 @@
 interface ContentProps {
-    result : object | null
+    result: { factorial: string[] } | null;
 }
 
 export function Result({ result }: ContentProps) {
     return (
         <div>
-            <h2>Resultado:</h2>
-            <pre>{result ? JSON.stringify(result, null, 2) : ""}</pre>
+            <h2>Detalhes do Cálculo do Fatorial</h2>
+            {result ? (
+                <ul>
+                    {result.factorial.map((step, index) => (
+                        <li key={index}>{step}</li>
+                    ))}
+                </ul>
+            ) : (
+                <p>Não há dados disponíveis</p>
+            )}
         </div>
     )
 }
